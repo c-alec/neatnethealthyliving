@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.page-container {
+		@apply mx-auto w-[min(1100px,94%)];
+	}
+
+	.section-block {
+		@apply page-container my-9;
+	}
+
+	.section-title {
+		@apply mb-4 text-3xl font-bold text-emerald-900;
+	}
+
+	.surface-card {
+		@apply rounded-[14px] border border-emerald-100 bg-white/95 shadow-[0_10px_28px_rgba(15,118,110,0.12)];
+	}
+
+	.product-grid {
+		@apply grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-[18px];
+	}
+
+	.info-grid {
+		@apply grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-[14px];
+	}
+
+	.info-card {
+		@apply rounded-xl bg-white p-4;
+	}
+
+	.info-copy {
+		@apply leading-relaxed text-slate-700;
+	}
+
+	.card-title {
+		@apply mb-2 text-lg font-bold;
+	}
+
+	.price-text {
+		@apply my-3 text-[20px] font-bold text-emerald-700;
+	}
+
+	.btn-light {
+		@apply inline-block rounded-[10px] bg-white px-[18px] py-[11px] font-bold text-emerald-700 no-underline shadow-sm transition-colors hover:bg-emerald-50;
+	}
+
+	.top-nav-link {
+		@apply font-bold text-emerald-50 no-underline transition-colors hover:text-white;
+	}
+
+	.social-link {
+		@apply inline-flex h-10 w-10 items-center justify-center rounded-md border border-emerald-100 bg-white text-slate-700 no-underline transition-colors hover:bg-emerald-50;
+	}
+}
